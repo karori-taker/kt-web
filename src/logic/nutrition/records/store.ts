@@ -1,1 +1,1 @@
-export const ID = 'nutrition:records';
+export const ID = 'nutrition:records'

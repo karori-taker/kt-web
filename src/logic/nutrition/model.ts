@@ -1,9 +1,9 @@
-interface Nutrition {
-  calories: number;
-  protein: number;
+export interface Nutrition {
+  calories: number
+  protein: number
   carbs: {
-    total: number;
-    fiber: number;
+    total: number
+    fiber: number
   }
-  fat: number;
+  fat: number
 }

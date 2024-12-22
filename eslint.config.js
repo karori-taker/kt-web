@@ -11,7 +11,7 @@ const browserGlobals = Object.fromEntries(Object.keys(globals.browser).map(key =
 
 export default [
   {
-    files: ['src/**/*'],
+    files: ['src/**/*.js'],
     languageOptions: {
       globals: {
         ...browserGlobals,
@@ -19,6 +19,10 @@ export default [
     },
     linterOptions: {
       reportUnusedDisableDirectives: true,
+      parserOptions: {
+        ecmaVersion: 'es2023',
+        extraFileExtensions: ['.svelte', '.astro'],
+      },
     },
     rules: js.configs.recommended.rules,
   },
